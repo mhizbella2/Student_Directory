@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassBook-Student Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ClassBook</h1>
+        <p>Your Simple Student Class Directory</p>
+    </header>
+
+    <main>
+
+        <!-- Student Form -->
+        <section class="form-section">
+            <h2>Add New Student</h2>
+
+            <form id="studentForm">
+
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName"placeholder="Enter student name">
+                <small id="nameError" class="error"></small><br>
+
+                <label for="studentScore">Student Score</label>
+                <input type="number" id="studentScore"placeholder="Enter score (0-100)">
+                <small id="scoreError" class="error"></small><br>
+
+                <button type="submit">Add Student</button>
+
+            </form>
+        </section>
+
+        <!-- Search Section -->
+        <section class="directory-section">
+            <h2>Student Directory</h2>
+
+            <input type="text" id="searchInput"placeholder="Search students by name...">
+
+            <div id="studentCount"></div>
+
+            <div id="studentList" class="student-list"></div>
+        </section>
+
+        <!-- Announcement Section -->
+        <section class="announcement-section">
+            <h2>Class Announcement</h2>
+
+            <p id="announcementStatus">Loading announcement...</p>
+
+            <div id="announcement"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ClassBook. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

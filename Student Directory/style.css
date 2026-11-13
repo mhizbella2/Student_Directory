@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #243b6b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #243b6b;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #243b6b;
+}
+
+button {
+    background-color: #243b6b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #36599b;
+}
+
+.error {
+    color: #d93025;
+    display: block;
+    font-size: 13px;
+}
+
+.student-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.student-card {
+    background-color: #edf2ff;
+    padding: 20px;
+    border-left: 5px solid #243b6b;
+    border-radius: 8px;
+}
+
+.student-card h3 {
+    color: #243b6b;
+    margin-bottom: 8px;
+}
+
+#studentCount {
+    margin-top: 12px;
+    color: #555;
+}
+
+.announcement-section {
+    border-left: 5px solid #e5a623;
+}
+
+#announcement {
+    margin-top: 15px;
+}
+
+#announcement h3 {
+    color: #243b6b;
+    margin-bottom: 10px;
+}
+
+.loading {
+    color: #b7791f;
+}
+
+.success {
+    color: #188038;
+}
+
+.failure {
+    color: #d93025;
+}
+
+footer {
+    background-color: #243b6b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
